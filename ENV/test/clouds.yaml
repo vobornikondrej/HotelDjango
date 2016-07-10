@@ -1,0 +1,8 @@
+ clouds:
+  ovobornik:
+    region_name: RegionOne
+    auth:
+      username: 'ovobornik'
+      password: 'hovno'
+      project_name: 'tcp_dev_ovo'
+      auth_url: 'https://vpc20-api.tcpcloud.eu:5000/v2.0'

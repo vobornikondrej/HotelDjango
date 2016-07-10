@@ -1,0 +1,15 @@
+{%load staticfiles  %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'hotels/style.css' %}" />
+
+{% if hotels_list %}
+	<form>
+    <ul>
+    {% for hotel in hotels_list %}
+        <li>{{ hotel.name }} ____ Price per night: {{hotel.price_per_night}} ____ Destination: {{hotel.destination}}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+    </form>
+{% endif %}
